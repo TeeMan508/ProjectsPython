@@ -18,3 +18,5 @@ def min(b=np.array([int(x) for x in a])):
             res=x
     return res
 print('max is: '+str(min(b))+' '+'min is:'+str(min(b)))
+
+#test commit
