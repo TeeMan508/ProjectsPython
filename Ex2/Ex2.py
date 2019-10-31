@@ -8,7 +8,7 @@ bsort=sorted(b)
 print(str(bsort)+'\n')
 print('max is:',str(bsort[0]))
 print('max is:',str(bsort[len(bsort)-1]))
-print('mean5 is:',(b**5).mean().round(3))
+print('mean5 is:',((b-b.mean())**5).mean())
 print('RMS is:',np.std(b).round(3))
 
 
