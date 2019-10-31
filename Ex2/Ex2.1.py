@@ -6,6 +6,7 @@ with open('Input.txt') as ifile:
 b=np.array([int(x) for x in a])
 print(str(sorted(b))+'\n')
 print('max is:',str(sorted(b)[0]))
+print('mean is:',b.mean())
 print('max is:',str(sorted(b)[len(sorted(b))-1]))
 print('mean5 is:',((b-b.mean())**5).mean())
 print('RMS is:',np.std(b).round(3))
