@@ -10,6 +10,9 @@ print('max is:',str(sorted(b)[len(sorted(b))-1]))
 print('mean5 is:',((b-b.mean())**5).mean())
 print('RMS is:',np.std(b).round(3))
 
+complexb=np.genfromtxt('ComplexInput.txt', delimiter='\n', dtype=complex)
+s=sorted(complexb, key=abs(complexb[0]))
+print(str(s))
 
 
 
