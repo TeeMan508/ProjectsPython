@@ -14,8 +14,7 @@ complexb=np.genfromtxt('ComplexInput.txt', delimiter='\n', dtype=complex)
 print('Absolute sorting:',str(sorted(complexb, key=lambda x: abs(x))))
 print('Reverse real sorting:',str(sorted(complexb, key=lambda x: x.real, reverse=True)))
 
-stringb=np.genfromtxt('StringInput.txt', delimiter=' ', dtype=str)
+stringb=tuple(np.genfromtxt('StringInput.txt', delimiter=' ', dtype=str))
 print('Lenght sorting:',str(sorted(stringb, key=lambda x: len(x))))
-stringb.sort()
-print('Lexical and graphic order sorting:',str(stringb))
+print('Lexical and graphic order sorting:',str(sorted(stringb)))
 
