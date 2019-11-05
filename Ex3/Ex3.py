@@ -1,4 +1,5 @@
 import math
+from functools import reduce
 #Сумма всех чисел от 1 до 2^25
 print(sum(range(1, 2**25+1)))
 
@@ -6,7 +7,7 @@ print(sum(range(1, 2**25+1)))
 print(input("String Input: ")[::-1])
 
 #Факториал 1000
-print(str(math.factorial(1000)))
+print(str(reduce(lambda x,y: x*y, [i for i in range(1, 1001)])))
 
 #Вывод всех клеточек поля для игры в морской бой
 print([n + str(i) for i in range(1,11) for n in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']])
